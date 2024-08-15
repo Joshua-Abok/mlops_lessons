@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>Survival Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            background-color: #025246;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Survivor Prediction App</h2>
+        <form action="/predict" method="post">
+            <div>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" value="0">
+            </div>
+            <div>
+                <label for="PClass">PClass:</label>
+                <select id="PClass" name="PClass">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div>
+                <label for="Fare">Fare:</label>
+                <input type="text" id="Fare" name="Fare" value="0">
+            </div>
+            <div>
+                <label for="Embarkment">Embarkment:</label>
+                <select id="Embarkment" name="Embarkment">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

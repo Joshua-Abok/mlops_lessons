@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import numpy as np 
 
-from predictions import predict 
+from ..predictions import predict 
 
 app = Flask(__name__)
 
