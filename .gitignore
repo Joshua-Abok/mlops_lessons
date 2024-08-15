@@ -1,3 +1,5 @@
 [MLFlow_Guide]_Logistic_Regression.ipynb
 yfinance
 Stock-Price-Forecast
+model_deployment_streamlit/streamlit_caching.jpg
+model_deployment_streamlit/fastapi.py
