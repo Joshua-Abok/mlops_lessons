@@ -25,8 +25,13 @@ def predict_route():
         # make prediction using the predict() function 
         result = predict(input_data)
 
+        if result[0] == 0:
+            return render_template('result.html', prediction="Did not survive")
+        else: 
+            return render_template('result.html', prediction="Survived")
+
         # display the prediction 
-        return render_template('result.html', prediction=result[0])
+        # return render_template('result.html', prediction=result[0])
     else: 
         return render_template('home.html')
     
